@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1a2c37;
+    color: #fff;
+}
+
+/*///////////////////////////////////////////////////// AFFILIATE SECTION CSS //////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.affiliate-container {
+    max-width: 800px;
+    margin: 20px;
+    background-color: #213742;
+    padding: 30px;
+    border-radius: 6px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.affiliate-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.affiliate-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.affiliate-subtitle {
+    font-size: 16px;
+    color: #b1bad2;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.affiliate-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.affiliate-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .affiliate-container {
+        margin: 30px 10px;
+        padding: 10px 20px;
+    }
+    
+    .affiliate-title {
+        font-size: 18px;
+    }
+    
+    .affiliate-subtitle {
+        font-size: 14px;
+    }
+}
+
+/* Custom Affiliate Program Section */
+.custom-affiliate-container {
+    max-width: 800px;
+    margin: 20px;
+    background-color: #213742;
+    padding: 30px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.custom-affiliate-content {
+    border: 1px solid #b1bad2;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.custom-affiliate-text {
+    color: #b1bad2;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+.affiliate-team-link {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    transition: opacity 0.2s ease;
+}
+
+.affiliate-team-link:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design for Custom Section */
+@media (max-width: 768px) {
+    .custom-affiliate-container {
+        margin: 30px 10px;
+        padding: 20px;
+    }
+    
+    .custom-affiliate-content {
+        padding: 20px;
+    }
+    
+    .custom-affiliate-text {
+        font-size: 14px;
+    }
+}
+
+/* Advantages Section */
+.advantages-container {
+    max-width: 1200px;
+    margin: 20px;
+    padding: 0 20px;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.advantage-block {
+    background-color: #213742;
+    padding: 30px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.advantage-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.advantage-icon i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.advantage-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.advantage-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.advantage-subtext {
+    color: #b1bad2;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive Design for Advantages Section */
+@media (max-width: 768px) {
+    .advantages-container {
+        margin: 30px 10px;
+        padding: 0 0px;
+    }
+    
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .advantage-block {
+        padding: 14px 20px;
+        gap: 15px;
+    }
+    
+    .advantage-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .advantage-icon i {
+        font-size: 20px;
+    }
+    
+    .advantage-title {
+        font-size: 16px;
+    }
+    
+    .advantage-subtext {
+        font-size: 13px;
+    }
+}
+
+/* Link Section */
+.link-container {
+    max-width: 800px;
+    margin: 20px;
+    background-color: #213742;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.link-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-text {
+    flex: 1;
+}
+
+.link-text p {
+    color: #b1bad2;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.link-button {
+    flex-shrink: 0;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design for Link Section */
+@media (max-width: 768px) {
+    .link-container {
+        margin: 30px 10px;
+        padding: 20px;
+    }
+    
+    .link-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    
+    .link-text p {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .link-button {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contact-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}
+
+/* FAQ Section */
+.faq-container {
+    max-width: 800px;
+    margin: 20px;
+    padding: 0 20px;
+}
+
+.faq-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: #213742;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.faq-question:hover {
+    background-color: #2a4558;
+}
+
+.faq-question-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.faq-arrow {
+    color: #fff;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-arrow {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+.faq-separator {
+    height: 1px;
+    background-color: #b1bad2;
+    margin: 0 20px;
+}
+
+.faq-answer p {
+    color: #b1bad2;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 20px;
+    padding: 0;
+}
+
+/* Responsive Design for FAQ Section */
+@media (max-width: 768px) {
+    .faq-container {
+        margin: 30px 10px;
+        padding: 0 0px;
+    }
+    
+    .faq-title {
+        font-size: 20px;
+    }
+    
+    .faq-question {
+        padding: 15px 20px;
+    }
+    
+    .faq-question-text {
+        font-size: 15px;
+    }
+    
+    .faq-answer p {
+        font-size: 13px;
+        margin: 15px 20px;
+    }
+}

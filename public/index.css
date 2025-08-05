@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1a2c37;
+    color: #fff;
+  }
+
+
+  /* ////////////////////////////////////////////////////////////////////// Game Card Rows etc... ////////////////////////////////////////////////////////////////////// */
+  
+  .section {
+    padding: 0 10px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    text-align: left; /* align to the left */
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .game-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 6px;
+    justify-items: start; /* align items to the left */
+   
+  }
+  
+  .game-gallery a img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    transition: opacity 0.2s ease;
+  }
+  
+  .game-gallery a img:hover {
+    opacity: 0.85;
+    cursor: pointer;
+  }
+  

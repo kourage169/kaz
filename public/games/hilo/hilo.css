@@ -1,0 +1,432 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: #1a2c37;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+  }
+
+/* wrap content in main-content */
+/* Add game container for proper positioning */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Add game container for proper positioning */
+.game-container {
+    position: relative;
+    width: 92vw;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Logo overlay styling is removed as logo will be drawn directly on canvas */
+
+canvas {
+    width: 92vw;
+    min-height: 250px;
+    height: 32vh;
+    background: #0f212d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    display: block;
+    touch-action: manipulation; /* Prevents zooming on tap */
+    max-width: 800px;
+   
+}
+
+
+#controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 82vw;
+    background: #213744;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #8fa3b0;
+    margin-bottom: 4px;
+}
+
+input[type="number"],
+select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #557085;
+    background: #0f212d;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #4caf50;
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238fa3b0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#playBtn {
+    background: #1fff20;
+}
+
+#cashoutBtn {
+    background: #ffd700;
+    color: black;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+
+
+
+
+/*//////////////// Stats container /////////////////////*/
+
+canvas {
+    z-index: 0;
+    position: relative; /* required for z-index to apply */
+  }
+
+
+
+
+
+
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    padding: 1rem;
+    background: #213744;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.balance {
+    color: #8fa3b0;
+    font-size: 1rem;
+}
+
+/* Stats and History Container */
+.stats-container {
+    max-width: 800px;
+    background: #0f212d;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profit-container {
+    background: #213742;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.profit-title {
+    color: #a7b1c8;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profit-amount {
+    background: #2f4552;
+    padding: 10px;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.164);
+}
+
+.history-container {
+    background: #0b1922;
+    padding: min(15px, 2vw);
+    border-radius: 4px;
+}
+
+/* Arrow Indicator Styles */
+.arrow-indicator {
+    background: white;
+    border-radius: 4px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0 -6px; /* Negative margin to overlap with cards */
+    align-self: center;
+    position: relative;
+    z-index: 2; /* Ensure arrow stays above cards */
+}
+
+.arrow-indicator svg {
+    width: 12px;
+    height: 12px;
+}
+
+.arrow-indicator.win svg {
+    color: #1fff20;
+}
+
+.arrow-indicator.lose svg {
+    color: #e74c3c;
+}
+
+.arrow-indicator.skip svg {
+    color: #ffa500;
+}
+
+/* Update history cards container to handle arrows */
+.history-cards {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    position: relative;
+    min-height: calc(min(90px, 12.5vw) + min(10px, 1.2vw));
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: min(5px, 0.6vw);
+}
+
+/* Adjust history card container for better arrow positioning */
+.history-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+/* History Card Styles */
+.history-card {
+    /* Base card size using viewport width */
+    min-width: calc(min(52px, 6.2vw));
+    height: calc(min(90px, 12.5vw));
+    /* Keep aspect ratio similar to original (32:58) */
+    aspect-ratio: 32/58;
+    background: white;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: min(12px, 1vw);
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease;
+    
+    /* Add transform properties for animations */
+    transform: translateX(0);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.history-card.skipped {
+    opacity: 0.5;
+}
+
+.history-card .card-value {
+    font-size: min(24px, 4.4vw);
+    font-weight: bold;
+    line-height: 1;
+}
+
+.history-card .card-suit {
+    font-size: min(28px, 6vw);
+    line-height: 1;
+    margin-top: min(4px, 0.5vw);
+}
+
+.history-card.red-suit {
+    color: #e74c3c;
+}
+
+.history-card.black-suit {
+    color: #2c3e50;
+}
+
+/* Animation for new cards entering */
+.history-card.slide-in {
+    transform: translateX(200%);
+    animation: slideIn 0.3s ease forwards;
+}
+
+/* Animation for cards being removed */
+.history-card.slide-out {
+    animation: slideOut 0.2s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+}
+
+/* Multiplier Box Styles */
+.multiplier-box {
+    background: #1fff20;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: min(12px, 2.2vw);
+    font-weight: bold;
+    min-width: 40px;
+    text-align: center;
+}
+
+.multiplier-box.lose {
+    background: #e74c3c;
+}
+
+.win-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1a2c37;
+    border: 6px solid #00e53d;
+    border-radius: 12px;
+    padding: 24px 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.win-message.visible {
+    opacity: 1;
+}
+
+.win-message .multiplier {
+    color: #00e53d;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.win-message .amount {
+    color: #00e53d;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#skipBtn {
+  position: absolute;
+  top: min(35px, 4vh);
+  left: 15%;
+  padding: min(8px, 0.8vh) min(12px, 1.5vw);
+  font-size: min(18px, 1.5vh);
+  background-color: #2f4552;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+  width: auto;
+  margin-top: 0;
+  transition: opacity 0.2s ease;
+}
+
+#skipBtn:hover {
+  background-color: #3a5567;
+}
+
+#skipBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.control-group.bet-currency {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.control-group.bet-currency .input-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.control-group.bet-currency .currency-wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+

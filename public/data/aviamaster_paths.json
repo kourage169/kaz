@@ -1,0 +1,2345 @@
+[
+  {
+    "layoutSequence": [
+      "layout38",
+      "layout22",
+      "layout3",
+      "layout4",
+      "layout19"
+    ],
+    "totalMultiplier": 0.19,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout49",
+      "layout4",
+      "layout16",
+      "layout25",
+      "layout24"
+    ],
+    "totalMultiplier": 0.25,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout103",
+      "layout28",
+      "layout27",
+      "layout63",
+      "layout75"
+    ],
+    "totalMultiplier": 0.26,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout8",
+      "layout1",
+      "layout3",
+      "layout5",
+      "layout6"
+    ],
+    "totalMultiplier": 0.38,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout94",
+      "layout7",
+      "layout28",
+      "layout78",
+      "layout78"
+    ],
+    "totalMultiplier": 0.38,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout104",
+      "layout71",
+      "layout27",
+      "layout63",
+      "layout75"
+    ],
+    "totalMultiplier": 0.43,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout45",
+      "layout19",
+      "layout27",
+      "layout6",
+      "layout23"
+    ],
+    "totalMultiplier": 0.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout117",
+      "layout7",
+      "layout55",
+      "layout95",
+      "layout75"
+    ],
+    "totalMultiplier": 0.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout96",
+      "layout2",
+      "layout3",
+      "layout66",
+      "layout78"
+    ],
+    "totalMultiplier": 0.63,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout7",
+      "layout2",
+      "layout4",
+      "layout5",
+      "layout6"
+    ],
+    "totalMultiplier": 0.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout13",
+      "layout4",
+      "layout6",
+      "layout9",
+      "layout8"
+    ],
+    "totalMultiplier": 0.75,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout27",
+      "layout7",
+      "layout8",
+      "layout12",
+      "layout5"
+    ],
+    "totalMultiplier": 0.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout53",
+      "layout54",
+      "layout53",
+      "layout2",
+      "layout24"
+    ],
+    "totalMultiplier": 0.75,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout55",
+      "layout7",
+      "layout3",
+      "layout44",
+      "layout57"
+    ],
+    "totalMultiplier": 0.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout56",
+      "layout1",
+      "layout12",
+      "layout49",
+      "layout23"
+    ],
+    "totalMultiplier": 0.75,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout84",
+      "layout55",
+      "layout34",
+      "layout74",
+      "layout76"
+    ],
+    "totalMultiplier": 0.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout102",
+      "layout11",
+      "layout52",
+      "layout80",
+      "layout73"
+    ],
+    "totalMultiplier": 0.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout120",
+      "layout7",
+      "layout5",
+      "layout91",
+      "layout74"
+    ],
+    "totalMultiplier": 0.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout66",
+      "layout82",
+      "layout111",
+      "layout105",
+      "layout78"
+    ],
+    "totalMultiplier": 0.83,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout91",
+      "layout4",
+      "layout84",
+      "layout75",
+      "layout79"
+    ],
+    "totalMultiplier": 0.88,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout29",
+      "layout86",
+      "layout71",
+      "layout90",
+      "layout74"
+    ],
+    "totalMultiplier": 0.88,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout14",
+      "layout7",
+      "layout9",
+      "layout2",
+      "layout1"
+    ],
+    "totalMultiplier": 1.13,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout66",
+      "layout107",
+      "layout112",
+      "layout105",
+      "layout78"
+    ],
+    "totalMultiplier": 1.13,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout119",
+      "layout82",
+      "layout9",
+      "layout71",
+      "layout74"
+    ],
+    "totalMultiplier": 1.19,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout21",
+      "layout2",
+      "layout7",
+      "layout18",
+      "layout7"
+    ],
+    "totalMultiplier": 1.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout69",
+      "layout27",
+      "layout52",
+      "layout37",
+      "layout61"
+    ],
+    "totalMultiplier": 1.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout99",
+      "layout85",
+      "layout56",
+      "layout66",
+      "layout77"
+    ],
+    "totalMultiplier": 1.25,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout66",
+      "layout82",
+      "layout88",
+      "layout99",
+      "layout77"
+    ],
+    "totalMultiplier": 1.4,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout9",
+      "layout4",
+      "layout3",
+      "layout5",
+      "layout10"
+    ],
+    "totalMultiplier": 1.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout7",
+      "layout1",
+      "layout3",
+      "layout4",
+      "layout6"
+    ],
+    "totalMultiplier": 1.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout14",
+      "layout5",
+      "layout6",
+      "layout2",
+      "layout1"
+    ],
+    "totalMultiplier": 1.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout18",
+      "layout7",
+      "layout7",
+      "layout4",
+      "layout3"
+    ],
+    "totalMultiplier": 1.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout55",
+      "layout12",
+      "layout7",
+      "layout44",
+      "layout57"
+    ],
+    "totalMultiplier": 1.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout63",
+      "layout5",
+      "layout34",
+      "layout22",
+      "layout61"
+    ],
+    "totalMultiplier": 1.61,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout77",
+      "layout77",
+      "layout67",
+      "layout57",
+      "layout47"
+    ],
+    "totalMultiplier": 1.61,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout104",
+      "layout74",
+      "layout7",
+      "layout83",
+      "layout75"
+    ],
+    "totalMultiplier": 1.88,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout10",
+      "layout5",
+      "layout2",
+      "layout7",
+      "layout6"
+    ],
+    "totalMultiplier": 2,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout14",
+      "layout2",
+      "layout8",
+      "layout2",
+      "layout1"
+    ],
+    "totalMultiplier": 2,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout17",
+      "layout14",
+      "layout18",
+      "layout4",
+      "layout3"
+    ],
+    "totalMultiplier": 2,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout27",
+      "layout2",
+      "layout28",
+      "layout12",
+      "layout5"
+    ],
+    "totalMultiplier": 2,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout69",
+      "layout7",
+      "layout67",
+      "layout33",
+      "layout62"
+    ],
+    "totalMultiplier": 2,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout108",
+      "layout94",
+      "layout96",
+      "layout86",
+      "layout73"
+    ],
+    "totalMultiplier": 2,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout112",
+      "layout71",
+      "layout82",
+      "layout82",
+      "layout79"
+    ],
+    "totalMultiplier": 2,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout3",
+      "layout1",
+      "layout8",
+      "layout4",
+      "layout6"
+    ],
+    "totalMultiplier": 2.13,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout40",
+      "layout7",
+      "layout13",
+      "layout1",
+      "layout26"
+    ],
+    "totalMultiplier": 2.25,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout79",
+      "layout5",
+      "layout12",
+      "layout73",
+      "layout78"
+    ],
+    "totalMultiplier": 2.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout81",
+      "layout18",
+      "layout5",
+      "layout78",
+      "layout72"
+    ],
+    "totalMultiplier": 2.25,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout104",
+      "layout7",
+      "layout27",
+      "layout63",
+      "layout75"
+    ],
+    "totalMultiplier": 2.25,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout8",
+      "layout7",
+      "layout3",
+      "layout5",
+      "layout6"
+    ],
+    "totalMultiplier": 2.38,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout78",
+      "layout43",
+      "layout78",
+      "layout72",
+      "layout76"
+    ],
+    "totalMultiplier": 2.38,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout120",
+      "layout7",
+      "layout30",
+      "layout91",
+      "layout74"
+    ],
+    "totalMultiplier": 2.38,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout84",
+      "layout4",
+      "layout34",
+      "layout74",
+      "layout74"
+    ],
+    "totalMultiplier": 2.63,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout17",
+      "layout15",
+      "layout18",
+      "layout4",
+      "layout3"
+    ],
+    "totalMultiplier": 2.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout39",
+      "layout7",
+      "layout13",
+      "layout4",
+      "layout16"
+    ],
+    "totalMultiplier": 2.75,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout94",
+      "layout95",
+      "layout59",
+      "layout73",
+      "layout78"
+    ],
+    "totalMultiplier": 2.85,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout74",
+      "layout3",
+      "layout23",
+      "layout73",
+      "layout63"
+    ],
+    "totalMultiplier": 2.86,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout118",
+      "layout8",
+      "layout88",
+      "layout88",
+      "layout78"
+    ],
+    "totalMultiplier": 2.88,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout63",
+      "layout29",
+      "layout5",
+      "layout61",
+      "layout31"
+    ],
+    "totalMultiplier": 2.97,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout12",
+      "layout2",
+      "layout4",
+      "layout5",
+      "layout1"
+    ],
+    "totalMultiplier": 3,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout3",
+      "layout98",
+      "layout77",
+      "layout73",
+      "layout74"
+    ],
+    "totalMultiplier": 3,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout80",
+      "layout7",
+      "layout2",
+      "layout73",
+      "layout78"
+    ],
+    "totalMultiplier": 3.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout81",
+      "layout1",
+      "layout55",
+      "layout76",
+      "layout77"
+    ],
+    "totalMultiplier": 3.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout48",
+      "layout2",
+      "layout1",
+      "layout23",
+      "layout27"
+    ],
+    "totalMultiplier": 3.32,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout2",
+      "layout6",
+      "layout8",
+      "layout4",
+      "layout6"
+    ],
+    "totalMultiplier": 3.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout19",
+      "layout3",
+      "layout5",
+      "layout15",
+      "layout7"
+    ],
+    "totalMultiplier": 3.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout77",
+      "layout77",
+      "layout77",
+      "layout77",
+      "layout77"
+    ],
+    "totalMultiplier": 3.6,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout63",
+      "layout3",
+      "layout37",
+      "layout27",
+      "layout61"
+    ],
+    "totalMultiplier": 3.63,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout21",
+      "layout7",
+      "layout3",
+      "layout18",
+      "layout7"
+    ],
+    "totalMultiplier": 3.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout78",
+      "layout7",
+      "layout73",
+      "layout72",
+      "layout76"
+    ],
+    "totalMultiplier": 3.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout111",
+      "layout22",
+      "layout33",
+      "layout44",
+      "layout55"
+    ],
+    "totalMultiplier": 3.75,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout27",
+      "layout1",
+      "layout27",
+      "layout18",
+      "layout26"
+    ],
+    "totalMultiplier": 3.82,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout13",
+      "layout7",
+      "layout8",
+      "layout2",
+      "layout1"
+    ],
+    "totalMultiplier": 3.88,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout39",
+      "layout7",
+      "layout2",
+      "layout12",
+      "layout21"
+    ],
+    "totalMultiplier": 3.88,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout79",
+      "layout4",
+      "layout74",
+      "layout73",
+      "layout78"
+    ],
+    "totalMultiplier": 3.88,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout80",
+      "layout50",
+      "layout14",
+      "layout77",
+      "layout72"
+    ],
+    "totalMultiplier": 4,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout95",
+      "layout7",
+      "layout1",
+      "layout71",
+      "layout78"
+    ],
+    "totalMultiplier": 4,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout28",
+      "layout81",
+      "layout71",
+      "layout80",
+      "layout74"
+    ],
+    "totalMultiplier": 4,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout2",
+      "layout2",
+      "layout8",
+      "layout4",
+      "layout6"
+    ],
+    "totalMultiplier": 4.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout66",
+      "layout116",
+      "layout71",
+      "layout73",
+      "layout75"
+    ],
+    "totalMultiplier": 4.38,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout1",
+      "layout7",
+      "layout4",
+      "layout6",
+      "layout5"
+    ],
+    "totalMultiplier": 4.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout10",
+      "layout7",
+      "layout4",
+      "layout7",
+      "layout6"
+    ],
+    "totalMultiplier": 4.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout27",
+      "layout16",
+      "layout12",
+      "layout18",
+      "layout23"
+    ],
+    "totalMultiplier": 4.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout43",
+      "layout2",
+      "layout27",
+      "layout6",
+      "layout23"
+    ],
+    "totalMultiplier": 4.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout12",
+      "layout86",
+      "layout74",
+      "layout114",
+      "layout75"
+    ],
+    "totalMultiplier": 4.88,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout119",
+      "layout99",
+      "layout7",
+      "layout73",
+      "layout76"
+    ],
+    "totalMultiplier": 5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout68",
+      "layout7",
+      "layout65",
+      "layout6",
+      "layout17"
+    ],
+    "totalMultiplier": 5.25,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout96",
+      "layout6",
+      "layout5",
+      "layout65",
+      "layout78"
+    ],
+    "totalMultiplier": 5.35,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout96",
+      "layout25",
+      "layout5",
+      "layout65",
+      "layout75"
+    ],
+    "totalMultiplier": 5.47,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout21",
+      "layout15",
+      "layout3",
+      "layout16",
+      "layout1"
+    ],
+    "totalMultiplier": 5.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout2",
+      "layout7",
+      "layout8",
+      "layout4",
+      "layout6"
+    ],
+    "totalMultiplier": 5.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout119",
+      "layout100",
+      "layout88",
+      "layout73",
+      "layout76"
+    ],
+    "totalMultiplier": 5.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout53",
+      "layout21",
+      "layout51",
+      "layout32",
+      "layout27"
+    ],
+    "totalMultiplier": 5.63,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout64",
+      "layout9",
+      "layout61",
+      "layout4",
+      "layout14"
+    ],
+    "totalMultiplier": 5.89,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout46",
+      "layout2",
+      "layout9",
+      "layout23",
+      "layout27"
+    ],
+    "totalMultiplier": 6,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout54",
+      "layout7",
+      "layout33",
+      "layout44",
+      "layout57"
+    ],
+    "totalMultiplier": 6,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout69",
+      "layout68",
+      "layout55",
+      "layout37",
+      "layout61"
+    ],
+    "totalMultiplier": 6,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout79",
+      "layout3",
+      "layout73",
+      "layout73",
+      "layout78"
+    ],
+    "totalMultiplier": 6,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout108",
+      "layout99",
+      "layout93",
+      "layout88",
+      "layout78"
+    ],
+    "totalMultiplier": 6,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout62",
+      "layout9",
+      "layout44",
+      "layout23",
+      "layout61"
+    ],
+    "totalMultiplier": 6.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout84",
+      "layout8",
+      "layout38",
+      "layout78",
+      "layout78"
+    ],
+    "totalMultiplier": 6.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout8",
+      "layout2",
+      "layout3",
+      "layout5",
+      "layout6"
+    ],
+    "totalMultiplier": 6.38,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout32",
+      "layout7",
+      "layout15",
+      "layout6",
+      "layout12"
+    ],
+    "totalMultiplier": 6.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout35",
+      "layout8",
+      "layout22",
+      "layout21",
+      "layout12"
+    ],
+    "totalMultiplier": 6.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout46",
+      "layout8",
+      "layout21",
+      "layout16",
+      "layout33"
+    ],
+    "totalMultiplier": 6.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout91",
+      "layout3",
+      "layout86",
+      "layout75",
+      "layout79"
+    ],
+    "totalMultiplier": 6.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout75",
+      "layout7",
+      "layout2",
+      "layout75",
+      "layout65"
+    ],
+    "totalMultiplier": 6.63,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout71",
+      "layout7",
+      "layout5",
+      "layout15",
+      "layout61"
+    ],
+    "totalMultiplier": 6.75,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout71",
+      "layout7",
+      "layout3",
+      "layout12",
+      "layout61"
+    ],
+    "totalMultiplier": 6.75,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout79",
+      "layout2",
+      "layout78",
+      "layout78",
+      "layout78"
+    ],
+    "totalMultiplier": 6.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout92",
+      "layout62",
+      "layout7",
+      "layout73",
+      "layout72"
+    ],
+    "totalMultiplier": 6.75,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout59",
+      "layout12",
+      "layout33",
+      "layout35",
+      "layout58"
+    ],
+    "totalMultiplier": 7,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout92",
+      "layout82",
+      "layout7",
+      "layout75",
+      "layout79"
+    ],
+    "totalMultiplier": 7,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout94",
+      "layout91",
+      "layout22",
+      "layout73",
+      "layout78"
+    ],
+    "totalMultiplier": 7,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout112",
+      "layout82",
+      "layout92",
+      "layout72",
+      "layout79"
+    ],
+    "totalMultiplier": 7.13,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout3",
+      "layout4",
+      "layout9",
+      "layout1",
+      "layout6"
+    ],
+    "totalMultiplier": 7.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout67",
+      "layout7",
+      "layout65",
+      "layout6",
+      "layout17"
+    ],
+    "totalMultiplier": 7.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout70",
+      "layout7",
+      "layout45",
+      "layout37",
+      "layout61"
+    ],
+    "totalMultiplier": 7.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout86",
+      "layout2",
+      "layout32",
+      "layout72",
+      "layout72"
+    ],
+    "totalMultiplier": 7.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout27",
+      "layout89",
+      "layout73",
+      "layout80",
+      "layout74"
+    ],
+    "totalMultiplier": 7.98,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout3",
+      "layout2",
+      "layout8",
+      "layout4",
+      "layout6"
+    ],
+    "totalMultiplier": 8,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout53",
+      "layout36",
+      "layout53",
+      "layout2",
+      "layout24"
+    ],
+    "totalMultiplier": 8,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout46",
+      "layout1",
+      "layout27",
+      "layout6",
+      "layout23"
+    ],
+    "totalMultiplier": 8.25,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout8",
+      "layout7",
+      "layout3",
+      "layout7",
+      "layout10"
+    ],
+    "totalMultiplier": 8.38,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout118",
+      "layout98",
+      "layout99",
+      "layout73",
+      "layout76"
+    ],
+    "totalMultiplier": 8.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout21",
+      "layout5",
+      "layout5",
+      "layout12",
+      "layout1"
+    ],
+    "totalMultiplier": 8.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout12",
+      "layout85",
+      "layout112",
+      "layout95",
+      "layout76"
+    ],
+    "totalMultiplier": 8.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout77",
+      "layout7",
+      "layout7",
+      "layout7",
+      "layout7"
+    ],
+    "totalMultiplier": 9.2,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout46",
+      "layout6",
+      "layout11",
+      "layout13",
+      "layout7"
+    ],
+    "totalMultiplier": 9.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout23",
+      "layout5",
+      "layout2",
+      "layout15",
+      "layout1"
+    ],
+    "totalMultiplier": 9.38,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout55",
+      "layout13",
+      "layout10",
+      "layout14",
+      "layout33"
+    ],
+    "totalMultiplier": 9.4,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout53",
+      "layout36",
+      "layout5",
+      "layout42",
+      "layout24"
+    ],
+    "totalMultiplier": 9.48,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout75",
+      "layout66",
+      "layout55",
+      "layout76",
+      "layout65"
+    ],
+    "totalMultiplier": 9.57,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout81",
+      "layout12",
+      "layout52",
+      "layout73",
+      "layout72"
+    ],
+    "totalMultiplier": 10,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout12",
+      "layout91",
+      "layout111",
+      "layout81",
+      "layout72"
+    ],
+    "totalMultiplier": 10.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout19",
+      "layout12",
+      "layout6",
+      "layout18",
+      "layout7"
+    ],
+    "totalMultiplier": 11,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout3",
+      "layout2",
+      "layout6",
+      "layout1",
+      "layout6"
+    ],
+    "totalMultiplier": 11.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout27",
+      "layout93",
+      "layout77",
+      "layout73",
+      "layout74"
+    ],
+    "totalMultiplier": 11.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout72",
+      "layout16",
+      "layout3",
+      "layout64",
+      "layout12"
+    ],
+    "totalMultiplier": 12.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout101",
+      "layout5",
+      "layout52",
+      "layout66",
+      "layout77"
+    ],
+    "totalMultiplier": 12.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout112",
+      "layout81",
+      "layout90",
+      "layout71",
+      "layout79"
+    ],
+    "totalMultiplier": 12.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout48",
+      "layout6",
+      "layout11",
+      "layout29",
+      "layout25"
+    ],
+    "totalMultiplier": 12.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout3",
+      "layout2",
+      "layout3",
+      "layout4",
+      "layout6"
+    ],
+    "totalMultiplier": 13,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout27",
+      "layout98",
+      "layout71",
+      "layout86",
+      "layout77"
+    ],
+    "totalMultiplier": 13,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout27",
+      "layout9",
+      "layout14",
+      "layout7",
+      "layout25"
+    ],
+    "totalMultiplier": 13.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout35",
+      "layout5",
+      "layout2",
+      "layout40",
+      "layout12"
+    ],
+    "totalMultiplier": 14,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout24",
+      "layout5",
+      "layout2",
+      "layout15",
+      "layout1"
+    ],
+    "totalMultiplier": 14.12,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout54",
+      "layout7",
+      "layout2",
+      "layout32",
+      "layout27"
+    ],
+    "totalMultiplier": 14.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout93",
+      "layout5",
+      "layout29",
+      "layout72",
+      "layout75"
+    ],
+    "totalMultiplier": 14.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout84",
+      "layout5",
+      "layout31",
+      "layout79",
+      "layout73"
+    ],
+    "totalMultiplier": 14.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout9",
+      "layout10",
+      "layout2",
+      "layout7",
+      "layout6"
+    ],
+    "totalMultiplier": 15,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout12",
+      "layout5",
+      "layout6",
+      "layout12",
+      "layout1"
+    ],
+    "totalMultiplier": 15,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout114",
+      "layout73",
+      "layout56",
+      "layout97",
+      "layout79"
+    ],
+    "totalMultiplier": 15,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout59",
+      "layout5",
+      "layout23",
+      "layout44",
+      "layout53"
+    ],
+    "totalMultiplier": 15.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout21",
+      "layout8",
+      "layout9",
+      "layout12",
+      "layout1"
+    ],
+    "totalMultiplier": 15.65,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout77",
+      "layout99",
+      "layout72",
+      "layout93",
+      "layout79"
+    ],
+    "totalMultiplier": 16.13,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout11",
+      "layout7",
+      "layout3",
+      "layout4",
+      "layout2"
+    ],
+    "totalMultiplier": 16.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout9",
+      "layout10",
+      "layout3",
+      "layout5",
+      "layout10"
+    ],
+    "totalMultiplier": 17.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout48",
+      "layout3",
+      "layout19",
+      "layout25",
+      "layout24"
+    ],
+    "totalMultiplier": 18.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout31",
+      "layout28",
+      "layout1",
+      "layout12",
+      "layout11"
+    ],
+    "totalMultiplier": 18.44,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout46",
+      "layout4",
+      "layout25",
+      "layout16",
+      "layout33"
+    ],
+    "totalMultiplier": 19.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout118",
+      "layout93",
+      "layout91",
+      "layout77",
+      "layout95"
+    ],
+    "totalMultiplier": 19.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout39",
+      "layout2",
+      "layout6",
+      "layout9",
+      "layout21"
+    ],
+    "totalMultiplier": 19.7,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout69",
+      "layout12",
+      "layout67",
+      "layout34",
+      "layout62"
+    ],
+    "totalMultiplier": 20,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout12",
+      "layout88",
+      "layout77",
+      "layout116",
+      "layout79"
+    ],
+    "totalMultiplier": 20,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout83",
+      "layout2",
+      "layout11",
+      "layout50",
+      "layout75"
+    ],
+    "totalMultiplier": 20.04,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout27",
+      "layout6",
+      "layout8",
+      "layout12",
+      "layout5"
+    ],
+    "totalMultiplier": 20.07,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout107",
+      "layout95",
+      "layout29",
+      "layout83",
+      "layout72"
+    ],
+    "totalMultiplier": 21.29,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout31",
+      "layout29",
+      "layout5",
+      "layout12",
+      "layout11"
+    ],
+    "totalMultiplier": 22.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout24",
+      "layout9",
+      "layout5",
+      "layout16",
+      "layout22"
+    ],
+    "totalMultiplier": 22.8,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout31",
+      "layout87",
+      "layout71",
+      "layout88",
+      "layout74"
+    ],
+    "totalMultiplier": 24.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout101",
+      "layout6",
+      "layout6",
+      "layout85",
+      "layout71"
+    ],
+    "totalMultiplier": 24.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout21",
+      "layout11",
+      "layout12",
+      "layout16",
+      "layout1"
+    ],
+    "totalMultiplier": 25,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout28",
+      "layout2",
+      "layout24",
+      "layout7",
+      "layout25"
+    ],
+    "totalMultiplier": 25.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout81",
+      "layout9",
+      "layout18",
+      "layout36",
+      "layout75"
+    ],
+    "totalMultiplier": 25.92,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout91",
+      "layout7",
+      "layout87",
+      "layout75",
+      "layout79"
+    ],
+    "totalMultiplier": 26,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout72",
+      "layout3",
+      "layout6",
+      "layout63",
+      "layout17"
+    ],
+    "totalMultiplier": 26.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout118",
+      "layout5",
+      "layout83",
+      "layout82",
+      "layout75"
+    ],
+    "totalMultiplier": 28,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout62",
+      "layout6",
+      "layout5",
+      "layout12",
+      "layout56"
+    ],
+    "totalMultiplier": 30.63,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout101",
+      "layout25",
+      "layout12",
+      "layout85",
+      "layout77"
+    ],
+    "totalMultiplier": 30.99,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout114",
+      "layout71",
+      "layout52",
+      "layout92",
+      "layout71"
+    ],
+    "totalMultiplier": 32,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout103",
+      "layout5",
+      "layout53",
+      "layout83",
+      "layout75"
+    ],
+    "totalMultiplier": 33,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout107",
+      "layout95",
+      "layout94",
+      "layout82",
+      "layout78"
+    ],
+    "totalMultiplier": 34,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout13",
+      "layout7",
+      "layout4",
+      "layout9",
+      "layout8"
+    ],
+    "totalMultiplier": 34.53,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout31",
+      "layout97",
+      "layout81",
+      "layout78",
+      "layout74"
+    ],
+    "totalMultiplier": 35,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout27",
+      "layout96",
+      "layout77",
+      "layout89",
+      "layout75"
+    ],
+    "totalMultiplier": 35.25,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout40",
+      "layout39",
+      "layout16",
+      "layout12",
+      "layout21"
+    ],
+    "totalMultiplier": 36,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout11",
+      "layout7",
+      "layout15",
+      "layout12",
+      "layout2"
+    ],
+    "totalMultiplier": 37,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout68",
+      "layout9",
+      "layout61",
+      "layout33",
+      "layout62"
+    ],
+    "totalMultiplier": 38.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout68",
+      "layout9",
+      "layout61",
+      "layout8",
+      "layout62"
+    ],
+    "totalMultiplier": 41,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout82",
+      "layout7",
+      "layout11",
+      "layout37",
+      "layout75"
+    ],
+    "totalMultiplier": 42,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout90",
+      "layout9",
+      "layout59",
+      "layout69",
+      "layout79"
+    ],
+    "totalMultiplier": 42,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout24",
+      "layout6",
+      "layout3",
+      "layout16",
+      "layout2"
+    ],
+    "totalMultiplier": 50.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout72",
+      "layout8",
+      "layout28",
+      "layout78",
+      "layout68"
+    ],
+    "totalMultiplier": 50.5,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout23",
+      "layout4",
+      "layout5",
+      "layout16",
+      "layout26"
+    ],
+    "totalMultiplier": 54,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout99",
+      "layout2",
+      "layout88",
+      "layout57",
+      "layout77"
+    ],
+    "totalMultiplier": 56,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout35",
+      "layout8",
+      "layout9",
+      "layout40",
+      "layout19"
+    ],
+    "totalMultiplier": 57.12,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout109",
+      "layout91",
+      "layout92",
+      "layout88",
+      "layout79"
+    ],
+    "totalMultiplier": 60,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout53",
+      "layout4",
+      "layout5",
+      "layout2",
+      "layout24"
+    ],
+    "totalMultiplier": 62.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout12",
+      "layout4",
+      "layout6",
+      "layout9",
+      "layout8"
+    ],
+    "totalMultiplier": 73,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout12",
+      "layout4",
+      "layout6",
+      "layout7",
+      "layout1"
+    ],
+    "totalMultiplier": 77,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout72",
+      "layout34",
+      "layout8",
+      "layout64",
+      "layout12"
+    ],
+    "totalMultiplier": 80.5,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout12",
+      "layout5",
+      "layout15",
+      "layout12",
+      "layout2"
+    ],
+    "totalMultiplier": 81.75,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout19",
+      "layout7",
+      "layout13",
+      "layout15",
+      "layout7"
+    ],
+    "totalMultiplier": 90,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout79",
+      "layout1",
+      "layout73",
+      "layout78",
+      "layout78"
+    ],
+    "totalMultiplier": 114,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout12",
+      "layout81",
+      "layout117",
+      "layout85",
+      "layout72"
+    ],
+    "totalMultiplier": 143.39,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout62",
+      "layout3",
+      "layout51",
+      "layout22",
+      "layout5"
+    ],
+    "totalMultiplier": 150.63,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout68",
+      "layout101",
+      "layout71",
+      "layout93",
+      "layout79"
+    ],
+    "totalMultiplier": 152.13,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout118",
+      "layout93",
+      "layout23",
+      "layout96",
+      "layout75"
+    ],
+    "totalMultiplier": 204.38,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout19",
+      "layout8",
+      "layout9",
+      "layout15",
+      "layout7"
+    ],
+    "totalMultiplier": 220,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout72",
+      "layout41",
+      "layout5",
+      "layout63",
+      "layout17"
+    ],
+    "totalMultiplier": 388.63,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout59",
+      "layout5",
+      "layout1",
+      "layout49",
+      "layout52"
+    ],
+    "totalMultiplier": 503,
+    "result": "crashed"
+  },
+  {
+    "layoutSequence": [
+      "layout74",
+      "layout5",
+      "layout26",
+      "layout73",
+      "layout63"
+    ],
+    "totalMultiplier": 2274,
+    "result": "landed"
+  },
+  {
+    "layoutSequence": [
+      "layout119",
+      "layout101",
+      "layout8",
+      "layout72",
+      "layout75"
+    ],
+    "totalMultiplier": 3128.25,
+    "result": "landed"
+  }
+]

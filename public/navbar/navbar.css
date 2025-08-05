@@ -1,0 +1,321 @@
+  /* ////////////////////////////////////////////////////////////////////// Navbar ////////////////////////////////////////////////////////////////////// */
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a2c37;
+    padding: 1rem 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 9999; /* Ensure navbar is above all content */
+  }
+  
+  .navbar-left {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  
+  .navbar-center {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
+  .logo {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .logo:hover {
+    opacity: 0.8;
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust height as needed */
+    width: auto;
+    vertical-align: middle;
+  }
+  
+  /* //////////////////////////////////// Balance Field (navbar) ////////////////////////////////////////// */
+
+  .balance-selector {
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .balance-wallet-container {
+    display: flex;
+    align-items: center;
+    border-radius: 6px; /* Rounded corners for whole container */
+    overflow: hidden; /* Clip children corners */
+  }
+  
+  /* Balance box with rounded left edges only */
+  .balance-box {
+    background: #0f212d;
+    color: #fff;
+    padding: 0.9rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  /* Wallet icon box with blue background and rounded right edges only */
+  .wallet-icon {
+    background: #1278dd;
+    padding: 0.9rem 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .wallet-icon:hover {
+    background-color: #0f5db8; /* Slightly darker on hover */
+  }
+  
+  .balance-box .arrow {
+    font-size: 1.2rem;
+    margin-left: auto;
+    color: #b1bad2;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: #0f212d;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    min-width: 180px;
+    z-index: 9999;
+  }
+
+  .dropdown-header {
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 1px solid #13303e;
+    background: #0f2c3d;
+  }
+  
+  .dropdown-item {
+    padding: 0.8rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 1px solid #13303e;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .amount-label {
+    color: #fff;
+  }
+  
+  .currency-label {
+    color: #b1bad2;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+  
+
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }  
+  
+  .dropdown-item:hover {
+    background: #13303e;
+  }
+  
+  /* //////////////////////////////////// Notification Field (navbar) ////////////////////////////////////////// */
+  
+  .notification-wrapper {
+    position: relative;
+  }
+  
+  .notification-icon {
+    position: relative;
+    background: #1278dd;
+    padding: 0.7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .notification-icon:hover {
+    background: #0f5db8;
+  }
+
+  .notif-dot {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 3px rgba(255, 0, 0, 0.8);
+  }
+  
+  .notification-dropdown {
+    position: absolute;
+    right: 0;
+    top: 120%;
+    background: #0f212d;
+    border-radius: 6px;
+    width: 260px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    display: none;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  
+  .notification-header {
+    position: relative;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 1px solid #13303e;
+    background: #0f2c3d;
+  }
+  
+  .notification-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .notification-item {
+    padding: 0.75rem 1rem;
+    color: #b1bad2;
+    border-bottom: 1px solid #13303e;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-item:hover {
+    background: #13303e;
+    color: #fff;
+  }
+
+  .close-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .close-btn:hover {
+    color: #ff4c4c;
+  }
+
+  /* //////////////////////////////////// Profile Field (navbar) ////////////////////////////////////////// */
+
+  .profile-wrapper {
+    position: relative;
+  }
+
+  .profile-icon {
+    background: #1278dd;
+    padding: 0.7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .profile-icon:hover {
+    background: #0f5db8;
+  }
+
+  .profile-dropdown {
+    position: absolute;
+    right: 0;
+    top: 120%;
+    background: #0f212d;
+    border-radius: 6px;
+    width: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    display: none;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  
+  .profile-header {
+    position: relative;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 1px solid #13303e;
+    background: #0f2c3d;
+  }
+  
+  .profile-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-item {
+    padding: 0.75rem 1rem;
+    color: #b1bad2;
+    border-bottom: 1px solid #13303e;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .profile-item:last-child {
+    border-bottom: none;
+  }
+  
+  .profile-item:hover {
+    background: #13303e;
+    color: #fff;
+  }
+  
+  

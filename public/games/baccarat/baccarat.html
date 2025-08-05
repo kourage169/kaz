@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baccarat Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="baccarat.css">
+    <link rel="stylesheet" href="/navbar/navbar.css">
+    <link rel="stylesheet" href="/history/history.css">
+</head>
+<body>
+
+      <!-- navbar -->
+      <header class="navbar">
+        <div class="navbar-left">
+          <div class="logo" id="logo-home">
+            <img src="/images/navbar_logo.png" alt="Logo" />
+          </div>
+        </div>
+      
+        <div class="navbar-center">
+          <div class="balance-selector">
+            <div class="balance-wallet-container">
+              <div class="balance-box" id="balance-box">
+                <span id="selected-balance">Balance: $0</span>
+                <span class="arrow">&#9662;</span>
+              </div>
+              <div class="wallet-icon" title="Wallet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+                  <path d="M21 7H7a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2zm-5 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM3 5h12v2H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h1v-2H3v-8h12v2h2V7a2 2 0 0 0-2-2H3z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown" id="balance-dropdown">
+              <div class="dropdown-header">Select Currency</div>
+              <div class="dropdown-item" data-currency="USD">$0</div>
+              <div class="dropdown-item" data-currency="LBP">£0</div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="navbar-right">
+          <!-- use for user icon, settings, etc. -->
+    
+          <div class="profile-wrapper">
+            <div class="profile-icon" id="profile-toggle" title="Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+              </svg>
+            </div>
+            <div class="profile-dropdown" id="profile-dropdown">
+              <div class="profile-header">Profile
+                <span class="close-btn" id="profile-close">&times;</span>
+              </div>
+              <div class="profile-list" id="profile-list">
+                <div class="profile-item" data-action="my-bets">My Bets</div>
+                <div class="profile-item" data-action="deposit">Deposit</div>
+                <div class="profile-item" data-action="withdraw">Withdraw</div>
+                <div class="profile-item" data-action="affiliate">Affiliate</div>
+                <div class="profile-item" data-action="contact">Contact Us</div>
+                <div class="profile-item" data-action="logout">Logout</div>
+              </div>
+            </div>
+          </div>
+          
+    
+          <div class="notification-wrapper">
+            <div class="notification-icon" id="notification-toggle" title="Notifications">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                <path d="M12 2C10.355 2 9 3.355 9 5v1.07C6.613 7.165 5 9.388 5 12v5l-2 2v1h18v-1l-2-2v-5c0-2.612-1.613-4.835-4-5.93V5c0-1.645-1.355-3-3-3zm0 20c1.104 0 2-.896 2-2h-4c0 1.104.896 2 2 2z"/>
+              </svg>
+              <span id="notif-dot" class="notif-dot" style="display:none;"></span>
+            </div>
+            <div class="notification-dropdown" id="notification-dropdown">
+              <div class="notification-header">Notifications
+               
+                <span class="close-btn" id="notif-close">&times;</span>
+    
+              </div>
+              <div class="notification-list" id="notification-list">
+                <!-- Notifications will be appended here -->
+                <div class="notification-item">No notifications</div>
+              </div>
+            </div>
+          </div>
+    
+    
+        </div>
+      </header>
+
+    
+  <main class="main-content">
+    <!-- Main Game Container -->
+   <div class="game-container">
+      <canvas id="baccaratCanvas" width="800" height="250"></canvas>
+
+      <!-- table container -->
+      <div class="table-container">
+          <div class="betting-buttons">
+              <div class="bet-button" data-bet="player">
+                  <div class="bet-title">PLAYER</div>
+                  <div class="bet-amount">$0.00</div>
+              </div>
+              <div class="bet-button" data-bet="tie">
+                  <div class="bet-title">TIE</div>
+                  <div class="bet-amount">$0.00</div>
+              </div>
+              <div class="bet-button" data-bet="banker">
+                  <div class="bet-title">BANKER</div>
+                  <div class="bet-amount">$0.00</div>
+              </div>
+          </div>
+          <div class="action-buttons">
+              <button id="undoBtn" class="action-btn">
+                  <i class="fas fa-undo"></i>
+                  <span>Undo</span>
+              </button>
+              <button id="clearBtn" class="action-btn">
+                  <span>Clear</span>
+                  <i class="fas fa-sync-alt"></i>
+              </button>
+          </div>
+      </div>
+
+   </div>
+
+    <div id="controls">
+
+        <div class="control-group">
+            <label for="chips">Select Chip</label>
+            <div class="chip-container">
+                <!-- USD Chips -->
+                <div class="chip usd-chip" data-value="0.1" data-currency="USD">
+                    <img src="/games/roulette/chip1.png" alt="$0.1 Chip">
+                    <span>0.1</span>
+                </div>
+                <div class="chip usd-chip" data-value="0.5" data-currency="USD">
+                    <img src="/games/roulette/chip2.png" alt="$0.5 Chip">
+                    <span>0.5</span>
+                </div>
+                <div class="chip usd-chip" data-value="1" data-currency="USD">
+                    <img src="/games/roulette/chip3.png" alt="$1 Chip">
+                    <span>1</span>
+                </div>
+                <div class="chip usd-chip" data-value="10" data-currency="USD">
+                    <img src="/games/roulette/chip4.png" alt="$10 Chip">
+                    <span>10</span>
+                </div>
+                <div class="chip usd-chip" data-value="100" data-currency="USD">
+                    <img src="/games/roulette/chip5.png" alt="$100 Chip">
+                    <span>100</span>
+                </div>
+                <div class="chip usd-chip" data-value="1000" data-currency="USD">
+                    <img src="/games/roulette/chip6.png" alt="$1K Chip">
+                    <span>1K</span>
+                </div>
+                
+                <!-- LBP Chips -->
+                <div class="chip lbp-chip" data-value="1000" data-currency="LBP" style="display: none;">
+                    <img src="/games/roulette/chip1.png" alt="1K Chip">
+                    <span>1K</span>
+                </div>
+                <div class="chip lbp-chip" data-value="5000" data-currency="LBP" style="display: none;">
+                    <img src="/games/roulette/chip2.png" alt="5K Chip">
+                    <span>5K</span>
+                </div>
+                <div class="chip lbp-chip" data-value="10000" data-currency="LBP" style="display: none;">
+                    <img src="/games/roulette/chip3.png" alt="10K Chip">
+                    <span>10K</span>
+                </div>
+                <div class="chip lbp-chip" data-value="100000" data-currency="LBP" style="display: none;">
+                    <img src="/games/roulette/chip4.png" alt="100K Chip">
+                    <span>100K</span>
+                </div>
+                <div class="chip lbp-chip" data-value="1000000" data-currency="LBP" style="display: none;">
+                    <img src="/games/roulette/chip5.png" alt="1M Chip">
+                    <span>1M</span>
+                </div>
+                <div class="chip lbp-chip" data-value="10000000" data-currency="LBP" style="display: none;">
+                    <img src="/games/roulette/chip6.png" alt="10M Chip">
+                    <span>10M</span>
+                </div>
+            </div>
+        </div>
+
+      <div class="control-group">
+        <button id="playBtn">Play</button>
+      </div>
+
+        <div class="control-group bet-currency">
+            <div class="input-wrapper">
+                <label for="betAmount">Bet Amount</label>
+                <input type="text" id="betAmount" value="1.00" readonly />
+            </div>
+            <div class="currency-wrapper">
+                <label for="currency">Currency</label>
+                <select id="currency">
+                    <option value="USD">USD</option>
+                    <option value="LBP">LBP</option>
+                </select>
+            </div>
+        </div>
+    </div>
+  </main>
+
+
+  
+<!-- //////////////////////// History Table Section///////////////////////////////// -->
+<div class="bet-history-wrapper">
+    <div class="bet-history-controls">
+      <div class="history-tabs">
+        <button class="history-tab active" id="allBetsBtn">All Bets</button>
+        <button class="history-tab" id="myBetsBtn">My Bets</button>
+      </div>
+  
+      <select class="history-count-select" id="historyCountSelect">
+        <option value="10" selected>10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+        <option value="50">50</option>
+      </select>
+    </div>
+  
+    <table class="bet-history-table">
+      <thead>
+        <tr>
+          <th>Game</th>
+          <th>User</th>
+          <th>Time</th>
+          <th>Bet</th>
+          <th>Payout</th>
+        </tr>
+      </thead>
+      <tbody id="bet-history">
+        <!-- Live bet rows will be dynamically inserted here -->
+      </tbody>
+    </table>
+  </div>
+
+
+    <script src="baccarat.js"></script>
+    <script src="/navbar/navbar.js"></script>
+    <script src="/history/history.js"></script>
+</body>
+</html>

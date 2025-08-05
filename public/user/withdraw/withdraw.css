@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1a2c37;
+    color: #fff;
+  }
+
+/*///////////////////////////////////////////////////// WITHDRAW SECTION CSS //////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.withdraw-container {
+    max-width: 500px;
+    margin: 20px;
+    background-color: #0f212d;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #2f4552;
+    color: #fff;
+  }
+  
+  .withdraw-box .field {
+    margin-bottom: 20px;
+  }
+  
+  .withdraw-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .withdraw-box .value {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #1a2c37;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .coin-logo {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Withdraw Network Dropdown Styles */
+  .withdraw-network-selector {
+    position: relative;
+  }
+  
+  .withdraw-selected-network {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #1a2c37;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .withdraw-selected-network .arrow {
+    margin-left: auto;
+  }
+  
+  .withdraw-network-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1a2c37;
+    border: 1px solid #2f4552;
+    border-radius: 8px;
+    margin-top: 4px;
+    z-index: 1000;
+    display: none;
+  }
+  
+  .withdraw-network-dropdown.show {
+    display: block;
+  }
+  
+  .withdraw-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: 1px solid #2f4552;
+  }
+  
+  .withdraw-dropdown-item:last-child {
+    border-bottom: none;
+  }
+  
+  .withdraw-dropdown-item:hover {
+    background: #2a3c47;
+  }
+  
+  .withdraw-dropdown-item img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .withdraw-dropdown-item span {
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .address-field {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #withdraw-address {
+    flex: 1;
+    background: #1a2c37;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  #withdraw-address::placeholder {
+    color: #6b7a8a;
+  }
+  
+  #withdraw-btn {
+    padding: 10px 16px;
+    background-color: #1278dd;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  #withdraw-btn:hover {
+    background-color: #0f5bb8;
+  }
+  
+  /* Toast notification styles */
+  .withdraw-toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .withdraw-toast.show {
+    opacity: 1;
+  }
+  
+  .withdraw-toast.error {
+    background-color: #f44336;
+  }
+  
+  .withdraw-warning {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #b1bad2;
+  }
+  
+  /* Withdraw History Styles */
+  .withdraw-history-wrapper {
+    padding: 6px;
+    background-color: #1a2c37;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #2f4552;
+    position: relative;
+  }
+  
+  .withdraw-history-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -6px;
+    margin-right: -6px;
+    margin-top: 10px;
+    padding: 20px 20px 10px 20px;
+    gap: 12px;
+    flex-wrap: nowrap;
+    min-height: 50px;
+    border-top: 1px solid #2f4552;
+  }
+  
+  .controls-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  
+  .pagination-btn {
+    background-color: #1278dd;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-btn:hover:not(:disabled) {
+    background-color: #0f5db8;
+  }
+  
+  .pagination-btn:disabled {
+    background-color: #2f4552;
+    color: #6b7a8a;
+    cursor: not-allowed;
+  }
+  
+  #withdraw-page-info {
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    min-width: 100px;
+    text-align: center;
+  }
+  
+  .withdraw-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .withdraw-history-table th,
+  .withdraw-history-table td {
+    padding: 16px 2px;
+    text-align: center;
+  }
+  
+  .withdraw-history-table th {
+    color: #afb8d0;
+    font-weight: bold;
+  }
+  
+  .withdraw-row-dark {
+    background-color: #213742;
+    border-radius: 6px;
+  }
+  
+  .withdraw-row-light {
+    background-color: #1a2c37;
+  }
+  
+  /* Target the Date, Currency, and Amount columns text color */
+  .withdraw-history-table tbody tr td:nth-child(2),
+  .withdraw-history-table tbody tr td:nth-child(3),
+  .withdraw-history-table tbody tr td:nth-child(4) {
+    color: #afb8d0;
+  }
+  
+  /* Keep Type column text white */
+  .withdraw-history-table tbody tr td:nth-child(1) {
+    color: #fff;
+  }
+  
+  .loading-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: #afb8d0;
+    font-weight: bold;
+    border-radius: 8px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    white-space: nowrap;
+  }
+  
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #2f4552;
+    border-top: 4px solid #1278dd;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 16px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .no-withdraws-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: #afb8d0;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .withdraw-history-controls {
+      flex-direction: row;
+      gap: 8px;
+      padding: 8px 10px;
+    }
+    
+    .controls-left {
+      gap: 10px;
+      font-size: 14px;
+    }
+    
+    .pagination-controls {
+      gap: 8px;
+    }
+    
+    #withdraw-page-info {
+      font-size: 14px;
+      min-width: 80px;
+    }
+  }
+
+
+    /* Table Title */
+.table-title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    text-align: left;
+  }

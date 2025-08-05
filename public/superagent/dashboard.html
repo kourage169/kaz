@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Super Agent Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+
+<div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal">
+      <h3 id="modalTitle">Action</h3>
+      <form id="modalForm">
+        <input type="number" name="amount" id="modalAmount" placeholder="Amount" required min="1" />
+        <select name="currency" id="modalCurrency">
+          <option value="USD">USD</option>
+          <option value="LBP">LBP</option>
+        </select>
+        <input type="hidden" id="modalAgentId" />
+        <input type="hidden" id="modalAction" />
+        <div class="status" id="modalStatus"></div>
+        <button type="submit">Confirm</button>
+        <button type="button" onclick="closeModal()">Cancel</button>
+      </form>
+    </div>
+  </div>
+  
+
+<body>
+  <div class="container">
+    <h1>Super Agent Dashboard</h1>
+
+    <div class="balances">
+      <h3>Your Balances:</h3>
+      <p>USD: <span id="balanceUSD">--</span></p>
+      <p>LBP: <span id="balanceLBP">--</span></p>
+    </div>
+
+    <hr />
+
+    <h3>Create New Agent</h3>
+    <form id="createAgentForm">
+      <input type="text" name="username" placeholder="Agent Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Create Agent</button>
+      <div class="status" id="createStatus"></div>
+    </form>
+
+    <hr />
+
+    <h3>Your Agents</h3>
+    <div id="agentList">
+      Loading agents...
+    </div>
+  </div>
+
+  <hr />
+<h3>Transfer History (To/From Agents)</h3>
+<div id="transactionHistory">Loading...</div>
+
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

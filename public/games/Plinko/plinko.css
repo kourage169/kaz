@@ -1,0 +1,159 @@
+body {
+  height: 100%;
+  margin: 0;
+  background: #1a2c37;
+  color: #eee;
+  font-family: Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+/* wrap content in main-content */
+/* Add game container for proper positioning */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+  
+  canvas {
+    background: #0f212d;
+    margin-top: 20px;
+    max-width: 90vw;  
+    max-height: 80vw; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  #controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80vw;
+    background: #213744;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+  
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Special styling for the bet amount and currency group */
+  .control-group.bet-currency {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  
+  .control-group.bet-currency .input-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .control-group.bet-currency .currency-wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Special styling for the rows and risk group */
+  .control-group.rows-risk {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  
+  .control-group.rows-risk .input-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .control-group.rows-risk .risk-wrapper {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    color: #8fa3b0;
+    margin-bottom: 4px;
+  }
+  
+  input[type="number"],
+  select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #557085;
+    background: #0f212d;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="number"]:focus,
+  select:focus {
+    border-color: #4caf50;
+  }
+  
+  select {
+    cursor: pointer;
+    appearance: none;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238fa3b0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  #playBtn {
+    background: #1fff20;
+  }
+  
+  button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+  }
+  
+  button:active {
+    transform: translateY(1px);
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    transform: none;
+    filter: none;
+  }
+  
+  

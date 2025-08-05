@@ -1,0 +1,477 @@
+{
+    "0": [
+        {
+          "initialAngle": 3.993050392039599,
+          "initialVelocity": 0.22420710346869127,
+          "outerPhaseFrames": 60
+        },
+        {
+            "initialAngle": 4.113658668296133,
+            "initialVelocity":  0.22250389512763996,
+            "outerPhaseFrames": 60
+          }
+      ],
+
+    "1": [
+        {
+          "initialAngle": 4.112592846820181,
+          "initialVelocity": 0.24364499442696635,
+          "outerPhaseFrames": 90
+        },
+        {
+            "initialAngle": 4.043277554835019,
+            "initialVelocity": 0.2443598407269442,
+            "outerPhaseFrames": 90
+          },
+        {
+            "initialAngle": 4.203648496377426,
+            "initialVelocity": 0.24278124582389127,
+            "outerPhaseFrames": 90
+          }
+      ],
+
+    "2": [
+        {
+          "initialAngle": 3.955401723271393,
+          "initialVelocity": 0.235665828974532,
+          "outerPhaseFrames": 60
+        },
+        {
+            "initialAngle": 4.143764813398405,
+            "initialVelocity": 0.23406426339651193,
+            "outerPhaseFrames": 60
+          },
+        {
+            "initialAngle": 4.091698746932657,
+            "initialVelocity": 0.21456253988913887,
+            "outerPhaseFrames": 90
+        }
+
+      ],
+
+      "3": [
+        {
+          "initialAngle": 3.9383782747487968,
+          "initialVelocity": 0.2212338225769464,
+          "outerPhaseFrames": 60
+        },
+        {
+            "initialAngle": 4.148062539234238,
+            "initialVelocity": 0.24752669730329283, 
+            "outerPhaseFrames": 120
+          }
+      ],
+
+      "4": [
+        {
+          "initialAngle": 3.885956659199203,
+          "initialVelocity": 0.2328631926178115,
+          "outerPhaseFrames": 60
+        },
+        {
+            "initialAngle": 4.224324559019507,
+            "initialVelocity": 0.22860935239953317,
+            "outerPhaseFrames": 60
+          }
+      ],
+
+      "5": [
+        {
+          "initialAngle": 3.8544795307537205,
+          "initialVelocity": 0.23871181705974337,
+          "outerPhaseFrames": 90
+        }
+      ],
+
+      "6": [
+        {
+          "initialAngle": 3.869850946858415,
+          "initialVelocity": 0.22398814307587755,
+          "outerPhaseFrames": 90
+        },
+        {
+            "initialAngle": 4.164932602292937,
+            "initialVelocity": 0.22048115581957273,
+            "outerPhaseFrames": 90
+          },
+        {
+            "initialAngle": 4.218889111542963,
+            "initialVelocity": 0.2407390574437101,
+            "outerPhaseFrames": 60
+        }
+      ],
+
+      "7": [
+        {
+          "initialAngle": 4.12588179902437,
+          "initialVelocity": 0.21150339540605584,
+          "outerPhaseFrames": 60
+        }
+      ],
+
+      "8": [
+        {
+          "initialAngle": 3.8649859516654748,
+          "initialVelocity": 0.23384897074810165,
+          "outerPhaseFrames": 90
+        }
+      ],
+
+      "9": [
+        {
+          "initialAngle": 4.148381496641517,
+          "initialVelocity": 0.23407690423590574,
+          "outerPhaseFrames": 120
+        },
+        {
+            "initialAngle": 3.8522916484821668,
+            "initialVelocity": 0.23731961951432654,
+            "outerPhaseFrames": 120
+          }
+      ],
+
+
+      "10": [
+        {
+          "initialAngle": 4.22381703605555,
+          "initialVelocity": 0.23344176710214332,
+          "outerPhaseFrames": 90
+        },
+        {
+            "initialAngle": 3.8307919206440153,
+            "initialVelocity": 0.22145285198749826,
+            "outerPhaseFrames": 120
+          }
+      ],
+
+      "11": [
+        {
+          "initialAngle": 3.9404781751604663,
+          "initialVelocity": 0.22951477316357333,
+          "outerPhaseFrames": 90
+        },
+        {
+            "initialAngle": 3.9118038054544955,
+            "initialVelocity": 0.22974159554857493,
+            "outerPhaseFrames": 90
+          }
+      ],
+
+      "12": [
+        {
+          "initialAngle": 3.9613876397087684,
+          "initialVelocity": 0.21704500820026584,
+          "outerPhaseFrames": 60
+        }
+      ],
+
+      "13": [
+        {
+          "initialAngle": 4.177519333921717,
+          "initialVelocity": 0.22399726991284918,
+          "outerPhaseFrames": 90
+        },
+        {
+            "initialAngle": 3.924572104433406,
+            "initialVelocity": 0.22570235457501897,
+            "outerPhaseFrames": 90
+          },
+        {
+            "initialAngle": 4.133274707080203,
+            "initialVelocity": 0.24484202611568687,
+            "outerPhaseFrames": 60
+          }
+      ],
+
+      "14": [
+        {
+          "initialAngle": 3.9201778840951635,
+          "initialVelocity": 0.2494646438271546,
+          "outerPhaseFrames": 90
+        },
+        {
+            "initialAngle": 3.931991051164035,
+            "initialVelocity": 0.24858884595500236,
+            "outerPhaseFrames": 90
+          }
+      ],
+
+      "15": [
+        {
+          "initialAngle": 3.8359930470390426,
+          "initialVelocity": 0.22974594872676254,
+          "outerPhaseFrames": 60
+        },
+        {
+            "initialAngle": 3.979227407222768,
+            "initialVelocity": 0.22792348099643298,
+            "outerPhaseFrames": 60
+          },
+        {
+            "initialAngle": 4.109483065864596,
+            "initialVelocity": 0.22699392464901186,
+            "outerPhaseFrames": 60
+          }
+      ],
+
+      "16": [
+        {
+          "initialAngle": 3.8798081420964716,
+          "initialVelocity": 0.2415834931632561,
+          "outerPhaseFrames": 90
+        },
+        {
+            "initialAngle": 4.176141814112407,
+            "initialVelocity": 0.2391718478228224,
+            "outerPhaseFrames": 90
+          }
+      ],
+
+      "17": [
+        {
+          "initialAngle": 3.8339267393906047,
+          "initialVelocity": 0.2200046360851613,
+          "outerPhaseFrames": 90
+        }
+      ],
+
+      "18": [
+        {
+          "initialAngle": 3.8474712529771313,
+          "initialVelocity": 0.21088554204886428,
+          "outerPhaseFrames": 60
+        },
+        {
+            "initialAngle": 3.919312185875838,
+            "initialVelocity": 0.2402481224825005,
+            "outerPhaseFrames": 120
+          }
+      ],
+
+
+    "19": [
+        {
+          "initialAngle": 3.844121502471968,
+          "initialVelocity": 0.23147679937051902,
+          "outerPhaseFrames": 60
+        },
+        {
+            "initialAngle": 4.177901633442227,
+            "initialVelocity": 0.22796879218992516,
+            "outerPhaseFrames": 60
+          }
+      ],
+
+      "20": [
+        {
+          "initialAngle": 4.096015930700337,
+          "initialVelocity": 0.2459501993090799,
+          "outerPhaseFrames": 90
+        }
+      ],
+
+      "21": [
+        {
+          "initialAngle": 3.9769462810060277,
+          "initialVelocity": 0.23331086776600704,
+          "outerPhaseFrames": 60
+        },
+        {
+            "initialAngle": 4.2024113730150505,
+            "initialVelocity": 0.23125634378741872,
+            "outerPhaseFrames": 60
+          },
+        {
+            "initialAngle": 3.935896042678084,
+            "initialVelocity": 0.2341674082283075,
+            "outerPhaseFrames": 60
+          }
+      ],
+
+      "23": [
+        {
+          "initialAngle": 3.9362074206561006,
+          "initialVelocity": 0.23478920415797302,
+          "outerPhaseFrames": 90
+        },
+        {
+            "initialAngle": 4.207186450003057,
+            "initialVelocity": 0.23158918790057018,
+            "outerPhaseFrames": 90
+          },
+        {
+            "initialAngle": 4.140836085172721,
+            "initialVelocity": 0.23223641011180113,
+            "outerPhaseFrames": 90
+        } 
+      ],
+
+      "22": [
+        {
+          "initialAngle": 4.094660977354152,
+          "initialVelocity":  0.23216324458587878,
+          "outerPhaseFrames": 30
+        }
+      ],
+
+      "24": [
+        {
+          "initialAngle": 3.911984924259993,
+          "initialVelocity": 0.24060130559275347,
+          "outerPhaseFrames": 90
+        },
+        {
+            "initialAngle": 4.099973746063428,
+            "initialVelocity":  0.23841218982954612,
+            "outerPhaseFrames": 90
+          }
+      ],
+
+
+    "25": [
+      {
+        "initialAngle": 4.154407108486552,
+        "initialVelocity": 0.21529840386667984,
+        "outerPhaseFrames": 90
+      },
+      {
+        "initialAngle": 3.8873674471257065,
+        "initialVelocity": 0.21800225650826938,
+        "outerPhaseFrames": 90
+      }
+    ],
+
+    "26": [
+        {
+          "initialAngle": 3.8883088394613785,
+          "initialVelocity": 0.2235351519610357,
+          "outerPhaseFrames": 60
+        },
+        {
+            "initialAngle": 3.9510205838132997,
+            "initialVelocity": 0.2224217934501525,
+            "outerPhaseFrames": 60
+          }
+      ],
+
+    "27": [
+        {
+          "initialAngle": 4.200975081013562,
+          "initialVelocity": 0.22285252233305547,
+          "outerPhaseFrames": 90
+        },
+        {
+            "initialAngle": 4.014795366886617,
+            "initialVelocity": 0.22418835432332374,
+            "outerPhaseFrames": 90
+          }
+      ],
+
+    "28": [
+      {
+        "initialAngle": 4.077091841325317,
+        "initialVelocity": 0.2136133261884289,
+        "outerPhaseFrames": 60
+      }
+    ],
+
+    "29": [
+        {
+          "initialAngle": 3.9096474230772906,
+          "initialVelocity": 0.21233209470802128,
+          "outerPhaseFrames": 60
+        },
+        {
+            "initialAngle": 3.9326709938839532,
+            "initialVelocity": 0.2117480376655356,
+            "outerPhaseFrames": 60
+          }
+      ],
+
+      "30": [
+        {
+          "initialAngle": 3.847186850287087,
+          "initialVelocity": 0.23212988295451956,
+          "outerPhaseFrames": 90
+        },
+        {
+            "initialAngle": 4.063245310124643,
+            "initialVelocity": 0.22946506645421313,
+            "outerPhaseFrames": 90
+          }
+      ],
+
+      "31": [
+        {
+          "initialAngle": 4.102194056406721,
+          "initialVelocity": 0.24916527239838504,
+          "outerPhaseFrames": 90
+        }
+      ],
+
+      "32": [
+        {
+          "initialAngle": 4.187780675919622,
+          "initialVelocity": 0.22363166218818753,
+          "outerPhaseFrames": 60
+        },
+        {
+            "initialAngle": 4.100880879811113,
+            "initialVelocity":  0.24159418045482167,
+            "outerPhaseFrames": 90
+          }
+      ],
+
+      "33": [
+        {
+          "initialAngle": 3.929103496576884,
+          "initialVelocity": 0.24345230969713627,
+          "outerPhaseFrames": 90
+        }
+      ],
+
+    "34": [
+      {
+        "initialAngle": 4.179327254969194,
+        "initialVelocity": 0.2186702846501863,
+        "outerPhaseFrames": 90
+      },
+      {
+        "initialAngle": 4.011231055463564,
+        "initialVelocity": 0.2207525739855472,
+        "outerPhaseFrames": 90
+      }
+    ],
+
+    "35": [
+      {
+        "initialAngle": 4.097497331600895,
+        "initialVelocity": 0.21801465328471065,
+        "outerPhaseFrames": 60
+      },
+      {
+        "initialAngle": 4.138258416956008,
+        "initialVelocity": 0.2174114248961318,
+        "outerPhaseFrames": 60
+      }
+    ],
+
+    "36": [
+      {
+        "initialAngle": 4.039345460876572,
+        "initialVelocity": 0.22630287068071556,
+        "outerPhaseFrames": 90
+      },
+      {
+        "initialAngle": 4.229591495710038,
+        "initialVelocity": 0.22450242632923145,
+        "outerPhaseFrames": 90
+      },
+        {
+            "initialAngle": 4.142819786824785,
+            "initialVelocity": 0.24666904473409443,
+            "outerPhaseFrames": 60
+        }
+    ]
+  }
+  

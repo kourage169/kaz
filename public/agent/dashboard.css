@@ -1,0 +1,53 @@
+body {
+    background: #111;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  input, button {
+    margin: 5px 0;
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background: #222;
+    color: white;
+  }
+  
+  button {
+    background-color: #28a745;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .status {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .user-entry {
+    background: #222;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .hidden { display: none; }
+  

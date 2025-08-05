@@ -1,0 +1,261 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: #1a2c37;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+  }
+
+/* wrap content in main-content */
+/* Add game container for proper positioning */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add game container for proper positioning */
+.game-container {
+    position: relative;
+    width: 92vw;
+    max-width: 800px;
+    margin-top: 10px;
+}
+
+/* Logo overlay styling is removed as logo will be drawn directly on canvas */
+
+canvas {
+    width: 92vw;
+    min-height: 250px;
+    height: 35vh;
+    background: #0f212d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    display: block;
+    touch-action: manipulation; /* Prevents zooming on tap */
+    max-width: 800px;
+   
+}
+
+
+#controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 82vw;
+    background: #213744;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Special styling for the bet amount and currency group */
+.control-group.bet-currency {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.control-group.bet-currency .input-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.control-group.bet-currency .currency-wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #8fa3b0;
+    margin-bottom: 4px;
+}
+
+input[type="number"],
+select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #557085;
+    background: #0f212d;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #4caf50;
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238fa3b0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+#playBtn {
+    background: #1fff20;
+}
+
+
+button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+
+
+
+
+/*//////////////// Stats container /////////////////////*/
+
+canvas {
+    z-index: 0;
+    position: relative; /* required for z-index to apply */
+  }
+
+
+
+
+
+
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    padding: 1rem;
+    background: #213744;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.balance {
+    color: #8fa3b0;
+    font-size: 1rem;
+}
+
+
+
+/* Bottom overlay that holds the boxes */
+.bottom-overlay {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    background-color: #213742;
+    border-radius: 4px;
+    padding: 10px 14px;
+    z-index: 2;
+}
+
+/* Inner boxes with consistent width */
+.value-box {
+    border-radius: 6px;
+    width: 35vw;
+    max-width: 160px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative; /* Needed for icon positioning */
+}
+
+/* Title text */
+.value-title {
+    color: #acb5cd;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Shared box content style for input/display */
+.value-box input,
+#winChanceDisplay {
+    background-color: #0f212d;
+    border: 2px solid #2c424f;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 8px 28px 8px 10px; /* extra right padding for icon */
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: white;
+}
+
+/* Make the win chance display look like a display field */
+#winChanceDisplay {
+   
+    display: flex;
+    align-items: center;
+}
+
+/* Input focus UX */
+.value-box input:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+/* Icon inside the input/display box */
+.value-icon {
+    position: absolute;
+    right: 10px;
+    top: 36px; /* aligns with input height */
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #acb5cd;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+  

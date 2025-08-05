@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: #1a2c37;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+  }
+
+/* wrap content in main-content */
+/* Add game container for proper positioning */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add game container for proper positioning */
+.game-container {
+    position: relative;
+    width: 94vw;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Logo overlay styling is removed as logo will be drawn directly on canvas */
+
+canvas {
+    width: 94vw;
+    min-height: 250px;
+    height: 35vh;
+    background: #0f212d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    display: block;
+    touch-action: manipulation; /* Prevents zooming on tap */
+    max-width: 800px;
+   
+}
+
+#controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 94vw;
+    background: #213744;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #8fa3b0;
+    margin-bottom: 4px;
+}
+
+input[type="number"],
+select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #557085;
+    background: #0f212d;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #4caf50;
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238fa3b0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+#playBtn {
+    background: #1fff20;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    background: #0f212d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.balance {
+    color: #8fa3b0;
+    font-size: 0.9rem;
+}
+
+.controls-container {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bet-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (min-width: 640px) {
+    .bet-controls {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.bet-amount-container,
+.currency-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .bet-amount-container,
+    .currency-container {
+        width: 48%;
+    }
+}
+
+/* For Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Game action buttons styling */
+.game-actions {
+    margin-bottom: 0px;
+    
+}
+
+.action-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.action-row button {
+    flex: 1;
+    margin-top: 0;
+}
+
+#hitBtn, #standBtn {
+    background-color: #2f4552;
+    color: white; 
+    font-size: 0.9rem;
+}
+
+#splitBtn, #doubleBtn {
+    background-color: #2f4552;
+    color: white;
+    font-size: 0.9rem;
+}
+
+#hitBtn:disabled, #standBtn:disabled, 
+#splitBtn:disabled, #doubleBtn:disabled {
+    background-color: #283e4a;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Game message styling */
+#game-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+    max-width: 90%;
+    border: 2px solid #4CAF50;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -60%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* Notification styles */
+.notification {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(231, 76, 60, 0.9);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.notification.show {
+    opacity: 1;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.notification.fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+/* --- Match dice game's bet-currency layout --- */
+.control-group.bet-currency {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.control-group.bet-currency .input-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.control-group.bet-currency .currency-wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

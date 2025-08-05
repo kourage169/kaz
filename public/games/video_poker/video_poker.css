@@ -1,0 +1,294 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: #1a2c37;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+  }
+
+/* wrap content in main-content */
+/* Add game container for proper positioning */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Logo overlay styling is removed as logo will be drawn directly on canvas */
+
+canvas {
+    width: 92vw;
+    min-height: 120px;
+    height: 12vh;
+    background: #0f212d;
+ 
+    cursor: pointer;
+    display: block;
+    touch-action: manipulation; /* Prevents zooming on tap */
+    max-width: 800px;
+   
+}
+
+
+#controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 82vw;
+    background: #213744;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Special styling for the bet amount and currency group */
+.control-group.bet-currency {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.control-group.bet-currency .input-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.control-group.bet-currency .currency-wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #8fa3b0;
+    margin-bottom: 4px;
+}
+
+input[type="number"],
+select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #557085;
+    background: #0f212d;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #4caf50;
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238fa3b0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+#playBtn {
+    background: #1fff20;
+}
+
+#cashoutBtn {
+    background: #ffd700;
+    color: black;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+
+
+
+
+/*//////////////// Stats container /////////////////////*/
+
+canvas {
+    z-index: 0;
+    position: relative; /* required for z-index to apply */
+  }
+
+
+
+
+
+
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    padding: 1rem;
+    background: #213744;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.balance {
+    color: #8fa3b0;
+    font-size: 1rem;
+}
+
+
+.payout-wrapper {
+    background-color: #0f212d;
+    padding: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+#payout-table {
+    background-color: #213742;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: sans-serif;
+  }
+  
+  .payout-row {
+    display: flex;
+    margin-bottom: 4px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  
+  .payout-title {
+    flex: 1;
+    background-color: #0f212d;
+    color: white;
+    font-weight: bold;
+    padding: 6px 10px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  .payout-multiplier {
+    width: 15vw;
+    background-color: #2f4552;
+    color: white;
+    font-weight: bold;
+    padding: 6px 10px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+
+  /* Deal Button */
+  .deal-button-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #0f212d;
+  }
+  
+  #dealButton {
+    background-color: #00e53d;
+    color: black;
+    border: 4px solid #2f4552;
+    padding: 14px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 0px;
+    width: auto;
+  }
+  
+  #dealButton:hover {
+    background-color: #00cc37;
+  }
+  
+
+
+  /* Win message */
+.win-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1a2c37;
+    border: 4px solid #00e53d;
+    border-radius: 12px;
+    padding: 6px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    min-width: max-content; /* Ensure container is wide enough for content */
+}
+
+.win-message.visible {
+    opacity: 1;
+}
+
+.win-message .win-title {
+    color: #00e53d;
+    font-size: 1.4rem;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.win-message .multiplier {
+    color: #00e53d;
+    font-size: 1.4rem;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.win-message .amount {
+    color: #00e53d;
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+

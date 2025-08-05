@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a2c37;
+    color: #fff;
+  }
+  
+.coinflip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-container {
+    position: relative;
+    width: 90vw;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.canvas-wrapper {
+    width: 100%;
+    background: #0f212d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+}
+
+#controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80vw;
+    background: #213744;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.control-group.bet-currency {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.control-group.bet-currency .input-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.control-group.bet-currency .currency-wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #8fa3b0;
+    margin-bottom: 4px;
+}
+
+input[type="number"],
+select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #557085;
+    background: #0f212d;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #4caf50;
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238fa3b0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+#heads-button {
+    background: #2f4552;
+}
+
+#tails-button {
+    background: #2f4552;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    transform: none;
+    filter: none;
+}
+
+.button-row {
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button-row button {
+    width: 50%;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.button-coin-img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.button-coin-img-left {
+  position: absolute;
+  left: 12px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.button-coin-img-right {
+  position: absolute;
+  right: 12px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+  
+
+.coin {
+  width: 160px;
+  height: 160px;
+  margin: 2rem auto;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease-out;
+  position: relative;
+ }
+
+ .coin.flipping {
+  transform: scale(1.5);
+ }
+
+ .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+
+ .front {
+  background-image: url('/images/heads.png');
+  transform: rotateY(0deg);
+ }
+
+ .back {
+  background-image: url('/images/tails.png');
+  transform: rotateY(180deg);
+}
+
+  
+
+.bet-section input {
+    padding: 0.5rem;
+    margin-right: 1rem;
+  }
+  
+  .bet-section button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+    border: 1px solid #444;
+  }
+  
+  #result-message {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+#results-history-row {
+  width: 100%;
+  min-height: 56px;
+  background: #0f212d;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 8px 24px 8px 24px;
+  box-sizing: border-box;
+  border-radius: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+#results-history-row-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+}
+
+.results-history-coin {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+@keyframes coin-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.results-history-coin.animate-in {
+  animation: coin-slide-in 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+  

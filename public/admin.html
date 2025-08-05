@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel - Create User</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <h2>Create New User</h2>
+  <form id="createUserForm">
+    <input type="text" name="username" placeholder="Username" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <input type="number" name="balanceUSD" placeholder="Starting USD Balance" value="0" min="0" required />
+    <input type="number" name="balanceLBP" placeholder="Starting LBP Balance" value="0" min="0" required />
+    <button type="submit">Create User</button>
+    <div class="status" id="status"></div>
+  </form>
+
+
+<h2>Create Super Agent</h2>
+<form id="createSuperAgentForm">
+  <input type="text" name="username" placeholder="Super Agent Username" required />
+  <input type="password" name="password" placeholder="Password" required />
+  <input type="number" name="balanceUSD" placeholder="Starting USD Balance" value="0" min="0" required />
+  <input type="number" name="balanceLBP" placeholder="Starting LBP Balance" value="0" min="0" required />
+  <button type="submit">Create Super Agent</button>
+  <div class="status" id="superStatus"></div>
+</form>
+
+
+<h2>Send Notification to Users</h2>
+<form id="sendNotificationForm">
+  <input type="text" name="message" placeholder="Notification message" required />
+
+  <select name="duration" required>
+    <option value="1d">Expire in 1 Day</option>
+    <option value="3d">Expire in 3 Days</option>
+    <option value="1w">Expire in 1 Week</option>
+    <option value="1m">Expire in 1 Month</option>
+  </select>
+
+  <label for="target-select">Send To:</label>
+  <select id="target-select" name="targetType" required>
+    <option value="all" selected>All Users</option>
+    <option value="specific">Specific User</option>
+  </select>
+
+  <input type="text" name="username" id="username-input" placeholder="Username" style="display:none; margin-top: 0.5rem;" />
+
+  <button type="submit">Send Notification</button>
+  <div class="status" id="notifStatus"></div>
+</form>
+
+
+
+
+  <script src="admin.js"></script>
+</body>
+</html>

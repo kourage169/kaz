@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino - Home</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="/navbar/navbar.css">
+  <link rel="stylesheet" href="/history/history.css">
+</head>
+<body>
+
+ <!-- navbar -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <div class="logo" id="logo-home">
+        <img src="/images/navbar_logo.png" alt="Logo" />
+      </div>
+    </div>
+  
+    <div class="navbar-center">
+      <div class="balance-selector">
+        <div class="balance-wallet-container">
+          <div class="balance-box" id="balance-box">
+            <span id="selected-balance">Balance: $0</span>
+            <span class="arrow">&#9662;</span>
+          </div>
+          <div class="wallet-icon" title="Wallet">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+              <path d="M21 7H7a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2zm-5 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM3 5h12v2H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h1v-2H3v-8h12v2h2V7a2 2 0 0 0-2-2H3z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="dropdown" id="balance-dropdown">
+          <div class="dropdown-header">Select Currency</div>
+          <div class="dropdown-item" data-currency="USD">$0</div>
+          <div class="dropdown-item" data-currency="LBP">£0</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="navbar-right">
+      <!-- use for user icon, settings, etc. -->
+
+      <div class="profile-wrapper">
+        <div class="profile-icon" id="profile-toggle" title="Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+          </svg>
+        </div>
+        <div class="profile-dropdown" id="profile-dropdown">
+          <div class="profile-header">Profile
+            <span class="close-btn" id="profile-close">&times;</span>
+          </div>
+          <div class="profile-list" id="profile-list">
+            <div class="profile-item" data-action="my-bets">My Bets</div>
+            <div class="profile-item" data-action="deposit">Deposit</div>
+            <div class="profile-item" data-action="withdraw">Withdraw</div>
+            <div class="profile-item" data-action="affiliate">Affiliate</div>
+            <div class="profile-item" data-action="contact">Contact Us</div>
+            <div class="profile-item" data-action="logout">Logout</div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="notification-wrapper">
+        <div class="notification-icon" id="notification-toggle" title="Notifications">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M12 2C10.355 2 9 3.355 9 5v1.07C6.613 7.165 5 9.388 5 12v5l-2 2v1h18v-1l-2-2v-5c0-2.612-1.613-4.835-4-5.93V5c0-1.645-1.355-3-3-3zm0 20c1.104 0 2-.896 2-2h-4c0 1.104.896 2 2 2z"/>
+          </svg>
+          <span id="notif-dot" class="notif-dot" style="display:none;"></span>
+        </div>
+        <div class="notification-dropdown" id="notification-dropdown">
+          <div class="notification-header">Notifications
+           
+            <span class="close-btn" id="notif-close">&times;</span>
+
+          </div>
+          <div class="notification-list" id="notification-list">
+            <!-- Notifications will be appended here -->
+            <div class="notification-item">No notifications</div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+  
+  
+  
+
+  
+<!-- Originals Section -->
+<section class="section">
+  <h2 class="section-title">Originals</h2>
+  <div class="game-gallery">
+    <a href="/games/mines"><img src="/images/mines.jpg" alt="Mines"></a>
+    <a href="/games/dice"><img src="/images/dice.jpg" alt="Dice"></a>
+    <a href="/games/roulette"><img src="/images/roulette.jpg" alt="Roulette"></a>
+    <a href="/games/coinflip"><img src="/images/coinflip.jpg" alt="Coinflip"></a>
+    <a href="/games/plinko"><img src="/images/plinko.jpg" alt="Plinko"></a>
+    <a href="/games/blackjack"><img src="/images/blackjack.jpg" alt="Blackjack"></a>
+    <a href="/games/cases"><img src="/images/cases.jpg" alt="Cases"></a>
+    <a href="/games/wheel"><img src="/images/wheel.jpg" alt="Wheel"></a>
+    <a href="/games/limbo"><img src="/images/limbo.jpg" alt="Limbo"></a>
+    <a href="/games/hilo"><img src="/images/hilo.jpg" alt="HiLo"></a>
+    <a href="/games/baccarat"><img src="/images/baccarat.jpg" alt="Baccarat"></a>
+    <a href="/games/video_poker"><img src="/images/video_poker.jpg" alt="Video Poker"></a>
+    <a href="/games/snakes"><img src="/images/snakes.jpg" alt="Snakes"></a>
+    <a href="/games/diamonds"><img src="/images/diamonds.jpg" alt="Diamonds"></a>
+    <a href="/games/tower"><img src="/images/tower.jpg" alt="Tower"></a>
+    <a href="/games/rps"><img src="/images/rps.jpg" alt="Rock Paper Scissors"></a>
+    <a href="/games/flip"><img src="/images/flip.jpg" alt="Flip"></a>
+    <a href="/games/keno"><img src="/images/keno.jpg" alt="Keno"></a>
+    <a href="/games/bars"><img src="/images/bars.jpg" alt="Bars"></a>
+    <a href="/games/connect"><img src="/images/connect.jpg" alt="Connect"></a>
+    <a href="/games/teen-patti"><img src="/images/teen-patti.jpg" alt="Teen Patti"></a>
+    <a href="/games/pump"><img src="/images/pump.jpg" alt="Pump"></a>
+    <a href="/games/bingo"><img src="/images/bingo.jpg" alt="Bingo"></a>
+  </div>
+</section>
+
+<!-- Slots Section -->
+<section class="section">
+  <h2 class="section-title">Slots</h2>
+  <div class="game-gallery">
+    <a href="/games/sweetbonanza"><img src="/images/slots/sweetbonanza.jpg" alt="Sweet Bonanza"></a>
+    <a href="/games/sweetbonanza1000"><img src="/images/slots/sweetbonanza1000.jpg" alt="Sweet Bonanza 1000"></a>
+    <a href="/games/sweetbonanzaxmas"><img src="/images/slots/sweetbonanzaxmas.jpg" alt="Sweet Bonanza Xmas"></a>
+    <a href="/games/gates"><img src="/images/slots/gates.jpg" alt="Gates of Olympus"></a>
+    <a href="/games/gates1000"><img src="/images/slots/gates1000.jpg" alt="Gates of Olympus 1000"></a>
+    <a href="/games/gatesxmas1000"><img src="/images/slots/gatesxmas1000.jpg" alt="Gates of Olympus Xmas 1000"></a>
+    <a href="/games/bigbassxmasxtreme"><img src="/images/slots/bigbassxmasxtreme.jpg" alt="Big Bass Xmas Xtreme"></a>
+  </div>
+</section>
+
+
+<!-- //////////////////////// History Table Section///////////////////////////////// -->
+<div class="bet-history-wrapper">
+  <div class="bet-history-controls">
+    <div class="history-tabs">
+      <button class="history-tab active" id="allBetsBtn">All Bets</button>
+      <button class="history-tab" id="myBetsBtn">My Bets</button>
+    </div>
+
+    <select class="history-count-select" id="historyCountSelect">
+      <option value="10" selected>10</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+      <option value="40">40</option>
+      <option value="50">50</option>
+    </select>
+  </div>
+
+  <table class="bet-history-table">
+    <thead>
+      <tr>
+        <th>Game</th>
+        <th>User</th>
+        <th>Time</th>
+        <th>Bet</th>
+        <th>Payout</th>
+      </tr>
+    </thead>
+    <tbody id="bet-history">
+      <!-- Live bet rows will be dynamically inserted here -->
+    </tbody>
+  </table>
+</div>
+
+
+
+
+  <script src="index.js"></script>
+  <script src="/navbar/navbar.js"></script>
+  <script src="/history/history.js"></script>
+</body>
+</html>

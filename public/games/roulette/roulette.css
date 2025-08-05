@@ -1,0 +1,654 @@
+body {
+  height: 100%;
+  margin: 0;
+  background: #1a2c37;
+  color: #eee;
+  font-family: Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+/* wrap content in main-content */
+/* Add game container for proper positioning */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-container {
+    position: relative;
+    width: 94vw;
+    max-width: 800px;
+    margin-top: 20px;
+    height: 60vh;
+    background: #0f212d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+  
+canvas {
+    width: 94vw;
+    aspect-ratio: 1;
+    background: #0f212d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    display: block;
+    touch-action: manipulation;
+    max-width: 800px;
+    height: 60vh;
+}
+  
+
+
+.betting-table {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  pointer-events: none;
+  font-size: 1.2vw; /* Base font size relative to container width */
+  align-items: center;
+  margin-right: 60px;
+}
+
+
+.number-grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.number-tile.zero {
+  background: #27ae60;
+  width: calc(3 * 10vw + 2 * 0.5vw);
+  height: 3.2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.number-tile,
+.bet-button {
+  width: 10vw;
+  height: 3.4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+
+
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  gap: 4px;
+}
+
+.number-tile.red {
+  background: #ff2745;
+}
+
+.number-tile.black {
+  background: #2c3e50;
+}
+
+
+.bet-button.color {
+  width: 100%;
+  height: 40px;
+}
+
+.bet-button.color.red {
+  background: #ff2745;
+}
+
+.bet-button.color.black {
+  background: #2c3e50;
+}
+
+.bet-button.dozen {
+  background: #444;
+  color: #fff;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.bet-button.selected,
+.number-tile.selected {
+  outline: none;
+}
+
+
+
+/* ──────────────────────────────────── */
+/*  New: "column-bets" container (under the 3×12 grid) */
+.column-bets {
+  display: grid;
+  /* 3 columns, each 10.5vw wide, with 4px gaps—same as .number-grid */
+  grid-template-columns: repeat(3, 10vw);
+  gap: 4px;
+  pointer-events: none;  /* children will handle clicks */
+  
+}
+
+/* ──────────────────────────────────── */
+/*  New: styling for each of the 3 column-bet buttons */
+.column-bets .bet-button.column {
+  width: 9.2vw;       /* matches each .number-grid column width */
+  height: 3.8vh;         /* matches your number-tile height */
+  background: #0f212d;    /* or any color you prefer */
+  border: 2px solid #2f4552;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;     /* you can adjust if needed */
+  cursor: pointer;
+  user-select: none;
+  pointer-events: auto; /* make them clickable */
+}
+
+
+
+
+/*////////////////////// left dozen  ////////////////////////////*/
+
+.left-panel {
+  display: flex;
+  flex-direction: row; /* change to row to align side-by-side */
+  gap: 6px;
+}
+
+.dozen-column,
+.outside-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Dozen buttons (3 total) */
+.dozen-column .bet-button {
+  width: 8.2vw;
+  height: 14.4vh;
+  background: #0f212d;
+  border: 2px solid #2f4552;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 0.9rem;
+}
+
+/* Outside buttons (6 total) */
+.outside-column .bet-button {
+  width: 8.2vw;
+  height: 6.75vh; /* 14.4vh / 2, so 2 buttons = 1 dozen height */
+  background: #0f212d;
+  border: 2px solid #2f4552;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Optional: Red & Black background styles */
+.outside-column .bet-button.red {
+  background: #ff2745;
+  border: 2px solid #ff2745;
+}
+
+.outside-column .bet-button.black {
+  background: #2c3e50;
+  border: 2px solid #2c3e50;
+}
+
+
+
+/*////////////////////////////////// CONTROLS UNDER CANVAS /////////////////////////////////////////////*/
+
+#controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 84vw;
+    max-width: 800px;
+    background: #213744;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for bet amount and currency on same line */
+.control-group.bet-currency {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.control-group.bet-currency .input-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.control-group.bet-currency .currency-wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #8fa3b0;
+    margin-bottom: 4px;
+}
+
+input[type="number"],
+select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #557085;
+    background: #0f212d;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #4caf50;
+}
+
+/* Add styling for text input (bet amount) */
+input[type="text"] {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #557085;
+    background: #0f212d;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    outline: none;
+    transition: border-color 0.3s ease;
+    
+}
+
+input[type="text"]:focus {
+    border-color: #4caf50;
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238fa3b0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+#playBtn {
+    background: #1fff20;
+}
+
+#clearBetsBtn {
+    position: absolute;
+    bottom: 10px;
+    right: -10px;
+    background: transparent;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 20;
+    transition: all 0.2s ease;
+    width: 25%;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+#undoBtn {
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    background: transparent;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 20;
+    transition: all 0.2s ease;
+    width: 25%;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+#undoBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#clearBetsBtn:active, #undoBtn:active {
+    transform: translateY(0);
+}
+
+#clearBetsBtn svg {
+    width: 16px;
+    height: 16px;
+}
+
+#cashoutBtn {
+    background: #2196F3;
+    display: none;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Chip styling */
+.chip-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #557085;
+    background: #0f212d;
+    align-items: center;
+}
+
+.chip {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.chip img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.chip span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #37393b;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.chip.selected {
+    outline: 3px solid white;
+    outline-offset: 0px;
+}
+
+/* Remove these gradient styles since we're using images now */
+/* 
+.usd-chip[data-value="1"] {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.usd-chip[data-value="10"] {
+    background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+}
+
+.usd-chip[data-value="100"] {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.usd-chip[data-value="1000"] {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+
+.lbp-chip[data-value="10000"] {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.lbp-chip[data-value="100000"] {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.lbp-chip[data-value="1000000"] {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+.lbp-chip[data-value="10000000"] {
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+}
+*/
+
+/* Add CSS for placed chips on the betting table */
+.bet-position {
+    position: relative;
+}
+
+.placed-chips-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.placed-chip {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+    pointer-events: none;
+    z-index: 5;
+}
+
+/* Specific margins for different button types */
+/* Number tiles (square) */
+.number-tile .placed-chip {
+    margin-top: -29px;
+}
+
+/* Column buttons */
+.column-bets .bet-button .placed-chip {
+    margin-top: -29px;
+}
+
+/* Dozen buttons (tall rectangles) - use horizontal stacking */
+.dozen-column .bet-button .placed-chips-container {
+    flex-direction: row; /* Change to horizontal stacking */
+    justify-content: center; /* Center horizontally */
+    width: auto; /* Let the width adjust to content */
+}
+
+.dozen-column .bet-button .placed-chip {
+    margin-top: -32px;
+    margin-right: -10px;
+}
+
+/* Fix for the last chip in dozen stacks */
+.dozen-column .bet-button .placed-chip:last-child {
+    margin-right: 0;
+}
+
+/* Outside buttons - also use horizontal stacking */
+.outside-column .bet-button .placed-chips-container {
+    flex-direction: row; /* Change to horizontal stacking */
+    justify-content: center; /* Center horizontally */
+    width: auto; /* Let the width adjust to content */
+}
+
+.outside-column .bet-button .placed-chip {
+    margin-top: -32px;
+}
+
+/* Fix for the last chip in outside button stacks */
+.outside-column .bet-button .placed-chip:last-child {
+    margin-right: 0;
+}
+
+/* Specific adjustment for red/black buttons */
+.outside-column .bet-button.red .placed-chip,
+.outside-column .bet-button.black .placed-chip {
+    margin-right: 0px; /* Same as other outside buttons */
+}
+
+.placed-chip:first-child {
+    margin-top: 0;
+}
+
+.placed-chip img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.placed-chip span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #37393b;
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.bet-button,
+.number-tile {
+    position: relative;
+}
+
+/* Clear the old .selected style as we'll use chips instead */
+.bet-button.selected,
+.number-tile.selected {
+    outline: none;
+}
+
+/* Add styling for the history panel */
+.history-panel {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  background: transparent;
+  border-radius: 6px;
+  z-index: 10;
+}
+
+.history-panel h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  text-align: center;
+  color: #8fa3b0;
+}
+
+.history-results {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history-item {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0 auto;
+}
+
+.history-item.red {
+  background: #ff2745;
+}
+
+.history-item.black {
+  background: #2c3e50;
+}
+
+.history-item.green {
+  background: #27ae60;
+}
+

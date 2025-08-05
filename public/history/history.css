@@ -1,0 +1,115 @@
+
+  /* ///////////////////////////////////////////////////////// History Table Section ////////////////////////////////////////////////////////////////// */
+
+  .bet-history-wrapper {
+    padding: 6px;
+    background-color: #1a2c37; /* main background */
+    color: #ffffff;
+    font-family: sans-serif;
+    margin-top: 30px;
+  }
+  
+  .bet-history-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    background-color: #0f212d; /* container background */
+    border-radius: 24px;
+    padding: 10px 14px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .history-tabs {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .history-tab {
+    background-color: #0f212d; /* unselected button bg */
+    color: #fff;               /* always white text */
+    font-weight: bold;         /* bold text */
+    padding: 12px 18px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .history-tab.active {
+    background-color: #2f4552; /* selected button bg */
+  }
+  
+  .history-count-select {
+    background-color: #0f212d;
+    border: 2px solid #2f4552;
+    color: #fff; /* white number text */
+    font-weight: bold; /* bold text */
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='%23b1bad2' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 12l-4-4h8l-4 4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    background-size: 24px 24px;
+    padding-right: 34px;
+    cursor: pointer;
+  }
+  
+  /* Optional: improve dropdown items appearance in some browsers */
+  .history-count-select option {
+    background-color: #0f212d;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+
+  
+  .history-tab.active {
+    background-color: #2f4552; /* selected button bg */
+    /* text color stays white */
+  }
+  
+  .bet-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .bet-history-table th,
+  .bet-history-table td {
+    padding: 16px 2px;
+    text-align: center;
+  }
+  
+  .bet-history-table th {
+    color: #afb8d0;
+    font-weight: bold;
+  }
+  
+  .bet-history-row-dark {
+    background-color: #213742;
+    border-radius: 6px;
+  }
+  
+  .bet-history-row-light {
+    background-color: #1a2c37;
+  }
+  
+
+  /* Target the Time, Bet, and Payout columns text color */
+.bet-history-table tbody tr td:nth-child(3),
+.bet-history-table tbody tr td:nth-child(4),
+.bet-history-table tbody tr td:nth-child(5) {
+  color: #afb8d0;
+}
+
+/* Keep Game and User columns text white (optional, since inherited from wrapper) */
+.bet-history-table tbody tr td:nth-child(1),
+.bet-history-table tbody tr td:nth-child(2) {
+  color: #fff;
+}

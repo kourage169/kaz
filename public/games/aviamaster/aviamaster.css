@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: red;
+    touch-action: none;
+  }
+  
+  .game-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    position: fixed;
+  }
+  
+  canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+  
+  @font-face {
+    font-family: 'GatesFont'; /* or whatever name you want */
+    src: url('aviamaster_assets/whitePlainText.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
